@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <!--Controller de cadastro de campanha-->
+    <script src="/javascripts/servidor-controller.js"></script>
+  </head>
+  <body>
+    <h1>AC 309</h1>
+    <p>Filipe Firmino - 1162 e Leonardo Vidal - 903</p>
+    <br><br>
+    <div class="form-group col-lg-4">
+      <div class="input-group-prepend">
+        <label>Importar CSV de coordenadas</label>
+      </div>
+      <br>
+      <div class="input-group mb-3">
+        <div class="custom-file">
+          <input
+            type="file"
+            class="custom-file-input"
+            id="importaContatosExterno"
+            aria-describedby="inputGroupFileAddon01"
+            accept="text/csv, .csv"
+          />
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <br>
+    <button class="btn" onclick="validarArquivo()">Enviar CSV</button>
+  </body>
+</html>
